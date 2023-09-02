@@ -4,6 +4,7 @@ class Maths
     {
         System.out.println(add(2,3,5,5));
         System.out.println(mul(2,3,5,5));
+        System.out.println(sub(5,7));
     }
     public static int add (int ...a)
     {
@@ -22,5 +23,9 @@ class Maths
             total = total*i;
         }
         return total;
+    }
+    public static int sub(int a, int b)
+    {
+        return a-b;
     }
 }
