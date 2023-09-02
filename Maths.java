@@ -4,7 +4,7 @@ class Maths
     {
         System.out.println(add(2,3,5,5));
         System.out.println(mul(2,3,5,5));
-        System.out.println(sub(5,7));
+        System.out.println(sub(10,7));
     }
     public static int add (int ...a)
     {
