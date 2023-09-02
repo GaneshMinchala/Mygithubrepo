@@ -4,7 +4,8 @@ class Maths
     {
         System.out.println(add(2,3,5,5));
         System.out.println(mul(2,3,5,5));
-        System.out.println(sub(10,20));
+        System.out.println(sub(10,5));
+       // System.out.println(-(0-20));
     }
     public static int add (int ...a)
     {
@@ -24,8 +25,14 @@ class Maths
         }
         return total;
     }
-    public static int sub(int a, int b)
+    // this function works for only two numbers
+    public static int sub(int ...a)
     {
-        return a-b;
+        int total=-0;
+        for(int i : a)
+        {
+            total = -(total + i);
+        }
+        return total;
     }
 }
